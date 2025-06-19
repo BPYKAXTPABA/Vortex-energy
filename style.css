@@ -204,6 +204,7 @@ footer .footer-logo img {
 }
 
 .can-buttons {
+  display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
