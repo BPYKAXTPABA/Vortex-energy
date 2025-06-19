@@ -259,3 +259,27 @@ footer .footer-logo img {
     transform: translateY(-10px);
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .logo {
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+}
