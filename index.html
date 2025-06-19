@@ -6,30 +6,33 @@
   <title>Vortex Energy</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       font-family: 'Inter', sans-serif;
-    }
-    body {
       background: linear-gradient(180deg, #0a0f1c, #111827);
       color: #e0f7ff;
-      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
-      background: #0f172a;
-      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #0f172a;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 10;
+    }
+    header h1 {
+      color: #38bdf8;
+      font-size: 1.5rem;
     }
     nav a {
       color: #e0f7ff;
-      margin-left: 1.5rem;
+      margin-left: 2rem;
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s;
@@ -38,125 +41,72 @@
       color: #38bdf8;
     }
     .hero {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 5rem 2rem;
+      padding: 4rem 2rem;
     }
-    .hero h1 {
+    .hero h2 {
       font-size: 3rem;
-      margin-bottom: 1rem;
       color: #38bdf8;
+      margin-bottom: 1rem;
     }
     .hero p {
-      max-width: 600px;
       font-size: 1.2rem;
+      max-width: 600px;
       margin-bottom: 2rem;
     }
-    .hero button {
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
+    .hero .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero .buttons a {
+      text-decoration: none;
       background-color: #38bdf8;
-      border: none;
-      border-radius: 8px;
       color: #0a0f1c;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
       font-weight: bold;
-      cursor: pointer;
       transition: background 0.3s;
     }
-    .hero button:hover {
+    .hero .buttons a:hover {
       background-color: #0ea5e9;
     }
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .ingredients {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 1.5rem;
-    }
-    .ingredient {
-      flex: 1 1 200px;
-      background: #1e293b;
-      padding: 1rem;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .ingredient h3 {
-      margin-bottom: 0.5rem;
-      color: #38bdf8;
-    }
-    .cta {
-      text-align: center;
-      padding: 3rem 2rem;
-    }
-    .cta button {
-      margin-top: 1rem;
-    }
     footer {
-      background: #0f172a;
-      padding: 2rem;
       text-align: center;
+      padding: 2rem;
       font-size: 0.9rem;
+      background-color: #0f172a;
       color: #94a3b8;
     }
   </style>
 </head>
 <body>
   <header>
-    <div><strong>VORTEX ENERGY</strong></div>
+    <h1>VORTEX ENERGY</h1>
     <nav>
-      <a href="#product">Product</a>
-      <a href="#ingredients">Ingredients</a>
-      <a href="#order">Order</a>
+      <a href="about.html">About</a>
+      <a href="product.html">Product</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>FUEL YOUR FOCUS</h1>
-    <p>Clean energy for mind & body. Powered by coconut water, caffeine, B12 and L-Tryptophan — for those who demand clarity, not chaos.</p>
-    <button onclick="location.href='https://bpykaxtpaba.github.io/Vortex-energy/'">ORDER NOW</button>
-  </section>
-
-  <section id="product">
-    <h2>About the Product</h2>
-    <p>Vortex Energy is a next-gen energy drink crafted for high-performers who want sustainable focus without the crash. It's made with coconut water for hydration, natural caffeine for mental clarity, methylated B12 for metabolism, and L-Tryptophan for mood balance.</p>
-  </section>
-
-  <section id="ingredients">
-    <h2>Core Ingredients</h2>
-    <div class="ingredients">
-      <div class="ingredient">
-        <h3>Caffeine</h3>
-        <p>80mg from natural sources — clean, stable alertness.</p>
-      </div>
-      <div class="ingredient">
-        <h3>Vitamin B12</h3>
-        <p>Supports energy production and reduces fatigue.</p>
-      </div>
-      <div class="ingredient">
-        <h3>L-Tryptophan</h3>
-        <p>Helps balance stress and sharpen focus.</p>
-      </div>
-      <div class="ingredient">
-        <h3>Coconut Water</h3>
-        <p>Natural electrolytes for hydration and recovery.</p>
-      </div>
+  <main class="hero">
+    <h2>FUEL YOUR FOCUS</h2>
+    <p>Clean energy. No crash. No compromise. Discover a new standard in performance and clarity with Vortex Energy.</p>
+    <div class="buttons">
+      <a href="product.html">Explore Product</a>
+      <a href="order.html">Order Now</a>
     </div>
-  </section>
-
-  <section id="order" class="cta">
-    <h2>Ready to Feel the Difference?</h2>
-    <p>Order your Vortex Energy today and power your potential.</p>
-    <button onclick="location.href='https://bpykaxtpaba.github.io/Vortex-energy/'">ORDER NOW</button>
-  </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Vortex Energy. Site by Rodion M. Babak</p>
+    <p>&copy; 2025 Vortex Energy. All rights reserved.</p>
   </footer>
 </body>
 </html>
