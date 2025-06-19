@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Vortex Energy</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(180deg, #0a0f1c, #111827);
-      color: #e0f7ff;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+    .contact-box {
+      background-color: #1e293b;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.08);
+      display: inline-block;
+      text-align: left;
+      margin-top: 2rem;
     }
-    header {
+
+    .contact-row {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 1.5rem 2rem;
-      background-color: #0f172a;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    header h1 {
-      color: #38bdf8;
-      font-size: 1.5rem;
-    }
-    nav a {
+      margin-bottom: 1rem;
+      font-size: 1rem;
       color: #e0f7ff;
-      margin-left: 2rem;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
     }
-    nav a:hover {
+
+    .contact-row svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.6rem;
+      stroke: #38bdf8;
+      flex-shrink: 0;
+    }
+
+    .contact-row strong {
       color: #38bdf8;
+      margin-right: 0.3rem;
     }
-    main {
+
+    .page-content {
       flex: 1;
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto;
       padding: 3rem 1.5rem;
       text-align: center;
     }
-    h1 {
+
+    .section-title {
       color: #38bdf8;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
-    p {
-      margin-bottom: 1.5rem;
+
+    .subheading {
+      color: #e0f7ff;
       font-size: 1.1rem;
-    }
-    .contact-info {
-      background-color: #1e293b;
-      border-radius: 10px;
-      padding: 2rem;
-      display: inline-block;
-      text-align: left;
-    }
-    .contact-info p {
-      margin: 0.5rem 0;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background-color: #0f172a;
-      color: #94a3b8;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>VORTEX ENERGY</h1>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Vortex Logo" />
+      <span>VORTEX ENERGY</span>
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -86,19 +76,35 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Contact Us</h1>
-    <p>If you have questions, feedback, or need support, feel free to reach out. We’re here to help!</p>
+  <main class="page-content">
+    <h1 class="section-title">Contact Us</h1>
+    <p class="subheading">If you have questions, feedback, or need support, feel free to reach out. We’re here to help!</p>
 
-    <div class="contact-info">
-      <p><strong>Email:</strong> support@vortexenergy.fake</p>
-      <p><strong>Phone:</strong> +1 (999) 123-4567</p>
-      <p><strong>Business Hours:</strong> Mon–Fri, 9am–5pm (EST)</p>
+    <div class="contact-box">
+      <div class="contact-row">
+        <i data-lucide="mail"></i>
+        <strong>Email:</strong> support@vortexenergy.fake
+      </div>
+      <div class="contact-row">
+        <i data-lucide="phone"></i>
+        <strong>Phone:</strong> +1 (999) 123-4567
+      </div>
+      <div class="contact-row">
+        <i data-lucide="clock"></i>
+        <strong>Business Hours:</strong> Mon–Fri, 9am–5pm (EST)
+      </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Vortex Energy. All rights reserved.</p>
+    <div class="footer-logo">
+      <img src="assets/logo.png" alt="Vortex Logo" />
+      <p>&copy; 2025 Vortex Energy. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
