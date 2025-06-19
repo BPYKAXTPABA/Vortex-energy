@@ -283,3 +283,28 @@ footer .footer-logo img {
     font-size: 1rem;
   }
 }
+
+nav a {
+  color: #e0f7ff;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #38bdf8;
+  border-radius: 2px;
+}
