@@ -24,19 +24,35 @@
 
   <main class="page-content">
     <h1 class="section-title">Product</h1>
+    <p class="subheading">Meet the next-gen energy drink made to fuel your focus and clarity.</p>
 
-    <div class="can-preview">
-      <img src="assets/vortex_can.png" alt="Vortex Energy Can">
+    <div class="can-preview" style="position: relative;">
+      <div style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(56,189,248,0.15) 0%, transparent 70%);
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        border-radius: 50%;
+      "></div>
+      <img src="assets/vortex_can.png" alt="Vortex Energy Can" style="position: relative; z-index: 1;">
+    </div>
+
+    <div class="buttons" style="justify-content: center; margin-top: 2rem;">
+      <a href="order.html">Order This</a>
     </div>
 
     <h2 class="subheading">In Action</h2>
     <div class="posts">
       <div class="post">
-        <img src="assets/poster_study.png" alt="Study Poster">
+        <img src="assets/poster_study.png" alt="Study Post">
         <p><strong>Study Mode:</strong> Clean energy to power your mind — no crash, just clarity.</p>
       </div>
       <div class="post">
-        <img src="assets/poster_gym.png" alt="Gym Poster">
+        <img src="assets/poster_gym.png" alt="Pre-workout Post">
         <p><strong>Pre-Workout:</strong> Caffeine. B12. L-Tryptophan. No junk. Just power.</p>
       </div>
     </div>
