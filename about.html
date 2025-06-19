@@ -8,33 +8,40 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Inter', sans-serif;
-      background: #0a0f1c;
+      background: linear-gradient(180deg, #0a0f1c, #111827);
       color: #e0f7ff;
-    }
-    header, footer {
-      background: #0f172a;
-      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #0f172a;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-    header h2 {
+    header h1 {
       color: #38bdf8;
-      margin: 0;
+      font-size: 1.5rem;
     }
     nav a {
-      margin-left: 1.5rem;
       color: #e0f7ff;
+      margin-left: 2rem;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s;
     }
     nav a:hover {
       color: #38bdf8;
     }
-    .container {
+    main {
+      flex: 1;
       max-width: 900px;
       margin: 0 auto;
       padding: 3rem 1.5rem;
@@ -52,11 +59,18 @@
       color: #38bdf8;
       font-weight: bold;
     }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: #0f172a;
+      color: #94a3b8;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h2>VORTEX ENERGY</h2>
+    <h1>VORTEX ENERGY</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -66,7 +80,7 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main>
     <h1>About Vortex Energy</h1>
     <p><span class="highlight">Vortex Energy</span> is a next-generation energy drink designed for people who demand clean fuel for both mind and body. While traditional energy drinks often rely on synthetic additives and overload you with sugar, Vortex offers a smarter solution. Our drink is based on <span class="highlight">coconut water</span> — a natural source of hydration — and enhanced with functional ingredients like <span class="highlight">natural caffeine</span>, <span class="highlight">methylated B12</span>, and <span class="highlight">L-Tryptophan</span>.</p>
 
