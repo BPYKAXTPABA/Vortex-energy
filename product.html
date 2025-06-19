@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product | Vortex Energy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #0a0f1c, #111827);
+      color: #e0f7ff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #0f172a;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      color: #38bdf8;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #e0f7ff;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    h1 {
+      color: #38bdf8;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .can {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+    .can img {
+      width: 250px;
+      height: auto;
+    }
+    .posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .post {
+      background-color: #1e293b;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .post img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .post p {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: #0f172a;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VORTEX ENERGY</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="product.html">Product</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Product</h1>
+    <div class="can">
+      <img src="assets/vortex_can.png" alt="Vortex Energy Can">
+    </div>
+
+    <h2 style="text-align:center; color:#e0f7ff; margin-bottom: 2rem;">In Action</h2>
+    <div class="posts">
+      <div class="post">
+        <img src="assets/study_post.png" alt="Study Post">
+        <p><strong>Study Mode:</strong> Clean energy to power your mind — no crash, just clarity.</p>
+      </div>
+      <div class="post">
+        <img src="assets/gym_post.png" alt="Pre-workout Post">
+        <p><strong>Pre-Workout:</strong> Caffeine. B12. L-Tryptophan. No junk. Just power.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vortex Energy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
